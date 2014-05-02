@@ -27,7 +27,7 @@ int main ()
 	
 	soma=ler_notas(soma);
 	media=calc_media(media,soma);
-	printf("\nMedia geral = %.2f\n",media);
+	printf("\nº Media geral = %.2f º\n\n",media);
 	
 	system("pause");
 	return 0;	
