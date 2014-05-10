@@ -1,2 +1,2 @@
-LB1
+Laboratório de Programação I
 ===
