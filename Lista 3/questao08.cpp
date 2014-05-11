@@ -9,40 +9,70 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
+#include <conio.c>
 
-int main () 
+int Soma (int soma_n, int n){
+	soma_n=soma_n + n;
+	return soma_n;
+}
+
+float Media(float soma_n,int conti,float media_n){
+	media_n=soma_n/conti;
+	return media_n;
+}
+
+int Menor (int n, int n_maior, int n_menor){
+	if (n >= n_maior)
+		n_maior=n;
+	if (n <= n_menor)
+		n_menor=n;
+	return (n_menor);	
+}	
+
+int Maior (int n, int n_maior, int n_menor){
+	if (n >= n_maior)
+		n_maior=n;
+	if (n <= n_menor)
+		n_menor=n;
+	return (n_maior);
+}
+
+float Soma_par (float soma_p, int n){
+	soma_p+=n;
+	return (soma_p);
+}
+
+int main ()
 {
-	int soma_num=0, soma_par=0, num, cont=0, cont_par=0, num_maior, num_menor;
+	int soma_num=0, soma_par=0, num, cont=0, cont_par=0, num_maior, num_menor, i;
 	float media_num, media_par;
 	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	printf("Digite um numero: ");
 	scanf("%d",&num);
 	num_maior=num_menor=num;
-	
-	while (num != 0)
-	{
-		soma_num+= num;
+	while (num != 0){
 		cont++;
-		if (num >= num_maior)
-			num_maior=num;
-		if (num <= num_menor)
-			num_menor=num;
-		
-		if ((num % 2) == 0)
-		{
+		soma_num=Soma(soma_num,num);
+		num_maior=Maior(num,num_maior,num_menor);
+		num_menor=Menor(num,num_maior,num_menor);
+		if (num%2 == 0){
+			soma_par=Soma_par(soma_par,num);
 			cont_par++;
-			soma_par+=num;
 		}
 		printf("Digite um numero: ");
-		scanf("%d",&num);	
+		scanf("%d",&num);		
 	}
 	media_num = (float)soma_num/cont;
-	media_par = (float)soma_par/cont_par;
-	printf("\n----------------------------------------------");
-	printf("\nSoma dos numeros digitados: %d \nQuantidade de numeros digitados: %d \nA media dos numeros digitados: %.2f",soma_num,cont,media_num);
-	printf("\nO maior numero digitado: %d \nO menor numero digitado: %d \nA media dos numeros pares: %.2f",num_maior,num_menor,media_par);
-	printf("\n----------------------------------------------\n\n");
+	media_par = (float)soma_par/cont_par;	
+	printf("\n");
+	for (i=0; i<56; i++)
+	printf("%c",205);
+	printf("\n\tSoma dos numeros digitados: %d \n\tQuantidade de numeros digitados: %d \n\tA media dos numeros digitados: %.2f",soma_num,cont,media_num);
+	printf("\n\tO maior numero digitado: %d \n\tO menor numero digitado: %d \n\tA media dos numeros pares: %.2f\n",num_maior,num_menor,media_par);
+	for (i=0; i<56; i++)
+	printf("%c",205);
+	printf("\n\n");
 	system("pause");
 	return 0;
-	
 }
+
