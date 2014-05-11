@@ -1,10 +1,14 @@
+/*Faça um programa que calcule o menor numero divisivel por cada um dos numeros
+de 1 a 20. Ex: 2520 é o menor numero que pode ser dividido por cada um dos numeros
+de 1 a 10, sem sombrar resto;*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main ()
 {
 	long int i, j, num=1, cont=0; 
-	
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	printf("Calculando o menor numero divisivel por cada um dos numeros de 1 a 20\nAguarde...");
 	while (cont != 20)
 	{
@@ -18,7 +22,7 @@ int main ()
 		}
 	
 	}
-	printf("Resultado = %d\n",num);
+	printf("Resultado = %d\n\n",num);
 	system("pause");
 	return 0;	
 	

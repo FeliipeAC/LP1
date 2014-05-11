@@ -1,11 +1,14 @@
+/* Leia um vetor de 10 posições e atribua valor 0 para todos os elementos que
+possuírem valores negativos*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
 int main ()
 {
 	int vetor[10], i, j;
-	
-	printf("Digite dez numeros: ");
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade%c º",184);
+	printf("\n\nDigite dez numeros: ");
 	
 	for (i=0; i < 10; i++)
 		{

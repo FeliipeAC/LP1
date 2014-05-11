@@ -1,9 +1,12 @@
+/*Faça um programa que peça o usuario para digitar 10 valroes e some-os.*/
+
 #include <stdio.h>
+#include <stdlib.h>
 
 int main ()
 {
 	int i=1, num, soma;
-	
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	printf("Digite dez numeros: ");
 	scanf("%d",&num);
 	soma=num;
@@ -12,10 +15,8 @@ int main ()
 			scanf("%d",&num);
 			soma=soma + num;
 		}
-	printf("\nSoma dos dez numeros digitados: %d",soma);
+	printf("\nSoma dos dez numeros digitados: %d\n\n",soma);
+	system("pause");
 	return 0;	
-	
-	
-	
-	
 }
+

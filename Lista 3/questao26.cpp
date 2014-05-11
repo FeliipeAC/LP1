@@ -1,3 +1,6 @@
+/*Faça um programa que leia um vetor de 10 posições e verifique se existem
+valores igauis e os escreva*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -21,8 +24,8 @@ return s;
 int main ()
 {
 	int vetor[10], vetor2[10], i, j, x=0,k, y=0;
-	
-	printf("Digite 10 numeros para o vetor: ");
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº",184);
+	printf("\n\nDigite 10 numeros para o vetor: ");
 	for (i=0; i<10; i++)
 		scanf("%d",&vetor[i]);
 	Ordena(vetor,i);
@@ -37,7 +40,6 @@ int main ()
 	printf("\nNumeros iguais: ");
 	for (k=0; k<y; k++)			
 		printf("%d ",vetor2[k]);
-	printf("\n\n\n\n\t\t\t\t\tºPor: Felipe Andrade%cº",184);
 	printf("\n\n");	
 	system("pause");
 	return 0;		
