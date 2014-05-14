@@ -39,25 +39,22 @@ int Ler_categoria (int cate){
 	return cate;	
 }
 
-float Categoria1 (int cate, float consu_cate1, float consu_mes ){
+float Categoria (int cate, float consu_cate, float consu_mes ){
 	
-	if (cate == 1)
-		consu_cate1=consu_cate1 + consu_mes;
-	return consu_cate1;	
-}
+	if (cate == 1){
+		consu_cate=consu_cate + consu_mes;
+		return consu_cate;	
+	}
+	
+	else if (cate == 2){
+		consu_cate=consu_cate + consu_mes;
+		return consu_cate;	
+	}
 
-float Categoria2 (int cate, float consu_cate2, float consu_mes ){
-	
-	if (cate == 2)
-		consu_cate2=consu_cate2 + consu_mes;
-	return consu_cate2;	
-}
-
-float Categoria3 (int cate, float consu_cate3, float consu_mes ){
-	
-	if (cate == 3)
-		consu_cate3=consu_cate3 + consu_mes;
-	return consu_cate3;	
+	else if (cate == 3){
+		consu_cate=consu_cate + consu_mes;
+		return consu_cate;
+	}
 }
 
 int Numero_hab (int num_hab){
@@ -110,9 +107,12 @@ int main ()
 		cons_mes_menor=Menor(cons_mes,cons_mes_maior,cons_mes_menor);
 		cont=cont + 1;
 		cat=Ler_categoria(cat);
-		cons_cat1=Categoria1(cat,cons_cat1,cons_mes);	
-		cons_cat2=Categoria2(cat,cons_cat2,cons_mes);
-		cons_cat3=Categoria3(cat,cons_cat3,cons_mes);
+		if (cat == 1)
+			cons_cat1=Categoria(cat,cons_cat1,cons_mes);	
+		else if(cat == 2) 
+			cons_cat2=Categoria(cat,cons_cat2,cons_mes);
+		else if (cat == 3)
+			cons_cat3=Categoria(cat,cons_cat3,cons_mes);
 		printf("Outro habitante (1 - sim / 2 - Nao): ");
 		scanf("%d",&resp);	
 		if (resp == 1)	
@@ -121,4 +121,3 @@ int main ()
 	media_cons=Media(cont,soma_cons,media_cons);
 	Resultado(cons_mes_maior,cons_mes_menor,media_cons,cons_cat1,cons_cat2,cons_cat3);
 }
-
