@@ -4,10 +4,9 @@ considerando numeros maiores que 0;*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int main ()
-{
+void Multiplos (){
 	int i, mult;
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	
 	printf("Os cincos primeiros multiplos de 3 sao: ");
 	for (i=1;i<6;i++)
 		{
@@ -16,5 +15,12 @@ int main ()
 		}
 	printf("\n\n");
 	system("pause");
-	return 0;
+	return;	
+}
+
+int main ()
+{
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	Multiplos();
+
 }

@@ -4,15 +4,17 @@ de Fibonacci até o peimeiro numero superior ao numero lido.*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int main () 
-{
-	int a=0,b=1,aux=0,i,num;
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+int Ler_numero(int n){
 	printf("Digite um numero: ");
-	scanf("%d",&num);
-	printf("Serie de Fibonacci:\n");
+	scanf("%d",&n);
+	return n;	
+}
+
+void Serie_fib (int n){
+	int a=0, b=1, i, aux=0;
+	printf("\nSerie de Fibonacci:\n");
 	printf("%d\n",b);
-	for (i=0; aux<num; i++)
+	for (i=0; aux<n; i++)
 	{
 		aux=a+b;
 		a=b;
@@ -22,5 +24,12 @@ int main ()
 	}
 	printf("\n\n");
 	system("pause");
-	return 0;
+	return;	
+}
+int main () 
+{
+	int num;
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	num=Ler_numero(num);
+	Serie_fib(num);
 }
