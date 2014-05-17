@@ -2,10 +2,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main ()
-{
+void Divisores(){
 	int i, num;
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	printf("Digite um numero positivo: ");
 	scanf("%d",&num);
 	printf("\nDivisores: ");
@@ -16,5 +14,11 @@ int main ()
 	}
 	printf("\n\n");
 	system("pause");
-	return 0;
+	return;
+}
+
+int main ()
+{
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	Divisores();
 }

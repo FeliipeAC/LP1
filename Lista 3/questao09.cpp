@@ -6,17 +6,19 @@ while, e a terceira do while;*/
 #include <stdlib.h>
 #include <windows.h>
 
-
-int main () 
-{
-	int i, j=1,k=1, x;
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n\n",184);
+void Tipo1 (){
+	int i;
 	for (i=1;i <= 100;i++)
 		{
 			printf("%d\t",i);
 			Sleep(1000);
 		}
 	printf("\n");
+	return;	
+}
+
+void Tipo2(){
+	int j=1;
 	while (j <= 100)
 		{
 			printf("%d\t",j);
@@ -24,6 +26,11 @@ int main ()
 			Sleep(1000);	
 		}
 	printf("\n");
+	return;
+}
+
+void Tipo3(){
+	int k=1;
 	do
 	{
 		printf("%d\t",k);
@@ -31,6 +38,14 @@ int main ()
 		Sleep(1000);
 		
 	} while(k<=100);
-	system("pause");
+	return;	
+}
+	
+int main () 
+{
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n\n",184);
+	Tipo1();
+	Tipo2();
+	Tipo3();
 	return 0;
 }

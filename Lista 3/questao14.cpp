@@ -3,10 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main ()
-{
+void Soma(){
 	int i=1, num, soma;
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	printf("Digite dez numeros: ");
 	scanf("%d",&num);
 	soma=num;
@@ -17,6 +15,11 @@ int main ()
 		}
 	printf("\nSoma dos dez numeros digitados: %d\n\n",soma);
 	system("pause");
-	return 0;	
+	return;	
+}
+int main ()
+{
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	Soma();
 }
 

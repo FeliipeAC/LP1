@@ -1,4 +1,4 @@
-/*Fça um algoritmo utilizando o comando while qye mostra uma contagem
+/*Fça um algoritmo utilizando o comando while que mostra uma contagem
 regressiva na tela, iniciando de 10 e terminando em 0. Mostra uma 
 mensagem "FIM!" após a contagem.*/
 
@@ -6,10 +6,8 @@ mensagem "FIM!" após a contagem.*/
 #include <stdlib.h>
 #include <windows.h>
 
-int main () 
-{
+void Contagem(){
 	int i=10;
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	while (i >= 0)
 		{
 			printf("%d\n",i);
@@ -18,10 +16,10 @@ int main ()
 		}
 	printf("\n\nFim!\n\n");
 	system("pause");	
-	return 0;
-	
-	
-	
-	
-	
+	return;
+}
+int main () 
+{
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	Contagem();	
 }

@@ -19,12 +19,10 @@ int inverte(int produto){
 return num_inv;
 	
 }
-int main(){
 
-    int i, j, num_inv, produto, palindromo, maior=0;
-	num_inv=0;
-    printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
-    for(i=100; i<=999; i++){
+void Palindromo(){
+    int i, j, num_inv=0, palindromo, maior=0, produto;
+	for(i=100; i<=999; i++){
 		for(j=100; j<=999; j++){
 			produto=(i*j);
 			
@@ -39,5 +37,12 @@ int main(){
 	
 	printf("Maior palindromo do protudo de 2 numeros de 3 digitos: %d\n\n", palindromo);
 	system("pause");
-    return 0;
+    return;	
+}
+
+int main(){
+
+    int produto;
+    printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	Palindromo();
 }

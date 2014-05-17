@@ -5,11 +5,9 @@ de 1 a 10, sem sombrar resto;*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int main ()
-{
-	long int i, j, num=1, cont=0; 
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
-	printf("Calculando o menor numero divisivel por cada um dos numeros de 1 a 20\nAguarde...");
+void Menor_num_div(){
+	long int i, j, num=1, cont=0;
+	printf("Calculando o menor numero divisivel por cada um dos numeros de 1 a 20\n\nAguarde...");
 	while (cont != 20)
 	{
 		++num;
@@ -22,8 +20,13 @@ int main ()
 		}
 	
 	}
-	printf("Resultado = %d\n\n",num);
+	printf("\nResultado = %d\n\n",num);
 	system("pause");
-	return 0;	
-	
+	return;
+}
+
+int main ()
+{
+ 	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
+	Menor_num_div();	
 }
