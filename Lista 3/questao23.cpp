@@ -22,7 +22,7 @@ float ler_notas(float soma=0)
 float calc_media (float media, float soma)
 {
 	media=soma/15;
-	
+	printf("\nº Media geral = %.2f º\n\n",media);	
 	return media;
 }
  
@@ -32,11 +32,7 @@ int main ()
 	printf("\t\t\t\t\t\tºPor: Felipe Andrade%c º",184);
 	soma=ler_notas(soma);
 	media=calc_media(media,soma);
-	printf("\nº Media geral = %.2f º\n\n",media);
-	
 	system("pause");
 	return 0;	
-	
-	
 	
 }

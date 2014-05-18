@@ -24,6 +24,17 @@ while (s == 0);
 return s;
 }
 
+void Resultado (int vetor[]){
+	int i;
+	printf("Vetor: ");
+	for	(i=0; i<11; i++)
+		printf("%d | ",vetor[i]);
+	Ordena(vetor,11);
+	printf("\n\nVetor ordenado: ");
+	for (i=0; i<11; i++)
+		printf("%d | ",vetor[i]);	
+}
+
 int main (){
 	int vetor[11], i;
 		vetor[0]=2;
@@ -38,13 +49,7 @@ int main (){
 		vetor[9]=14;
 		vetor[10]=10;
 	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
-	printf("Vetor: ");
-	for	(i=0; i<12; i++)
-		printf("%d ",vetor[i]);
-	Ordena(vetor,11);
-	printf("\n\nVetor ordenado: ");
-	for (i=0; i<12; i++)
-		printf("%d ",vetor[i]);
+	Resultado(vetor);
 	printf("\n\n");
 	system("pause");
 	return 0;	

@@ -11,10 +11,17 @@ char Ler_string (char nome[]){
 	return nome[20];
 }
 
-void Resultado (char nome[]){
+void Resultado (char nome[], int tam){
+	int i;
+	while (i <= tam)
+	{
+		if (nome[i] == '0')
+			nome[i]='1';
+		i++;	
+	}	
+	
 	printf("\nComo ficou: %s\n\n",nome);
-	system("pause");
-	return ;	
+	
 }
 	
 int main ()
@@ -24,14 +31,9 @@ int main ()
 	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	nome[20]=Ler_string(nome);
 	tam=strlen(nome);
-	while (i <= tam)
-	{
-		if (nome[i] == '0')
-			nome[i]='1';
-		i++;	
-	}
-	Resultado(nome);
-
+	Resultado(nome,tam);
+	system("pause");
+	return 0;
 	
 	
 }

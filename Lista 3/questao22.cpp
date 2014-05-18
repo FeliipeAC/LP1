@@ -4,12 +4,9 @@ possuírem valores negativos*/
 #include <stdio.h>
 #include <stdlib.h>
 
-int main ()
-{
-	int vetor[10], i, j;
-	printf("\t\t\t\t\t\tºPor: Felipe Andrade%c º",184);
-	printf("\n\nDigite dez numeros: ");
-	
+void Substituir(){
+	int vetor[10], i, j;	
+	printf("\n\nDigite dez numeros: ");	
 	for (i=0; i < 10; i++)
 		{
 			scanf("%d",&vetor[i]);
@@ -20,7 +17,14 @@ int main ()
 	for (j=0;j < 10; j++)
 		printf(" %d",vetor[j]);
 	
-	printf("\n");
+	printf("\n\n");
+	
+}
+
+int main ()
+{
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade%c º",184);
+	Substituir();
 	system("pause");
 	return 0;
 	

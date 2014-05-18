@@ -21,14 +21,15 @@ do{
 while (s == 0);
 return s;
 }
-int main ()
-{
-	int vetor[10], vetor2[10], i, j, x=0,k, y=0;
-	printf("\t\t\t\t\t\t튡or: Felipe Andrade %c�",184);
+
+int Ler_vetor(int vetor[], int i){
 	printf("\n\nDigite 10 numeros para o vetor: ");
 	for (i=0; i<10; i++)
 		scanf("%d",&vetor[i]);
-	Ordena(vetor,i);
+	return vetor[i];		
+}
+
+void Num_iguais(int vetor[], int vetor2[], int j, int y, int k ){
 	for (j=1; j<10; j++){
 		if ((vetor[j] == vetor[j-1]) && (vetor[j] != vetor[j+1])) 
 		{
@@ -36,10 +37,18 @@ int main ()
 			y++;
 		}		
 	}
-	
 	printf("\nNumeros iguais: ");
-	for (k=0; k<y; k++)			
-		printf("%d ",vetor2[k]);
+	for (k=0; k<y; k++)
+		printf("%d ",vetor2[k]);	
+}
+
+int main ()
+{
+	int vetor[10], vetor2[10], i, j, x=0,k, y=0;
+	printf("\t\t\t\t\t\t튡or: Felipe Andrade %c�",184);
+	vetor[10]=Ler_vetor(vetor,i);
+	Ordena(vetor,10);
+	Num_iguais(vetor,vetor2,j,y,k);
 	printf("\n\n");	
 	system("pause");
 	return 0;		
