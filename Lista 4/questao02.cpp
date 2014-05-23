@@ -43,6 +43,7 @@ int main ()
 {
 	char frase[30], frase_inv[30], frase_se[30],frase_inv_se[30];
 	int tam,tam_se, i;
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	frase[30]=Ler_string(frase);
 	tam=strlen(frase);
 	frase_se[30]=Apaga_esp(frase,frase_se,tam);
