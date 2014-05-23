@@ -47,7 +47,7 @@ int main ()
  	char palavra[15], palavra_alt[15], caract;
  	int cont_vogais;
  	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
-	 palavra[15]=Palavra(palavra);
+	palavra[15]=Palavra(palavra);
 	cont_vogais=Qnt_vogais(palavra,cont_vogais);
  	caract=Caractere(caract);
 	palavra_alt[15]=Subst_caractere(palavra,palavra_alt,caract);

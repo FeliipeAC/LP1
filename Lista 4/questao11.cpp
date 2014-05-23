@@ -35,6 +35,7 @@ void Substituindo(char frase_inv[], char frase_inv2 []){
 int main ()
 {	
 	char frase_inv[30],frase_inv2[30];
+	printf("\t\t\t\t\t\tºPor: Felipe Andrade %cº\n\n",184);
 	frase_inv[30]=Inversa(frase_inv);
 	frase_inv2[30]=Inversa(frase_inv2);
 	Substituindo(frase_inv,frase_inv2);
