@@ -37,9 +37,8 @@ float Nota2(float nota2[], int i){
 void Medias(char nome[][15],int matr[], int cod_disc[], float nota1[], float nota2[]){
 	int j; 
  	printf("\t\t\t\t\t\tºPor: Felipe Andrade%c º\n",184);
- 	printf("\nNome\tMatricula\tCod. Disciplina\tMedia\n");
- 	for (j=0; j<2;j++)
- 	printf("%s\t| %d\t\t| %d\t\t| %.2f\n",nome[j],matr[j],cod_disc[j],(nota1[j]+(nota2[j]*2))/3);	
+ 	for (j=0; j<10;j++)
+ 	printf("NOME: %s\nMATRICULA: %d\nCOD. DISCIPLINA: %d\nMEDIA: %.2f\n\n",nome[j],matr[j],cod_disc[j],(nota1[j]+(nota2[j]*2))/3);	
 }
 
 int main ()
@@ -47,8 +46,8 @@ int main ()
 	int i,j, matr[10], cod_disc[10];
 	char nome[10][15];
 	float nota1[10], nota2[10];
-	
-	for (i=0;i<2;i++){
+
+	for (i=0;i<10;i++){
 		printf("\t\t\t\t\t\tºPor: Felipe Andrade%c º\n",184);
 		matr[i]=Matricula(matr,i);
 		nome[i][15]=Nomes(nome,i);
@@ -59,4 +58,3 @@ int main ()
 	}
 	Medias(nome, matr,cod_disc,nota1,nota2);
 }
-
